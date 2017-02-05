@@ -8,6 +8,9 @@ namespace Maya.Model
 {
     public class Assassin : Maya.Common.Classes.IAssassin
     {
+        private bool check = false;
+        public Assassin() {
 
+        }
     }
 }
