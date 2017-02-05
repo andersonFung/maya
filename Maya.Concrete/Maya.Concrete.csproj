@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0E62531D-B652-43E6-BC9C-B90E9AE7265D}</ProjectGuid>
+    <ProjectGuid>{42E27A4C-B8DE-43CE-876A-EA2F5C1E18CB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Maya.Common</RootNamespace>
-    <AssemblyName>Maya.Common</AssemblyName>
+    <RootNamespace>Maya.Concrete</RootNamespace>
+    <AssemblyName>Maya.Concrete</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,16 +40,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Actions\IPlayer.cs" />
-    <Compile Include="Board\IBoard.cs" />
-    <Compile Include="Cards\ICard.cs" />
-    <Compile Include="Classes\IAssassin.cs" />
-    <Compile Include="Classes\IHuman.cs" />
-    <Compile Include="Factories\ICardFactory.cs" />
+    <Compile Include="CardFactory.cs" />
+    <Compile Include="Classes\Assassin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\ICardRepository.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Maya.Common\Maya.Common.csproj">
+      <Project>{0e62531d-b652-43e6-bc9c-b90e9ae7265d}</Project>
+      <Name>Maya.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

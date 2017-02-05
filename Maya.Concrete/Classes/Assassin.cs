@@ -5,12 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Maya.Model
+namespace Maya.Concrete.Classes
 {
-    public class Assassin : IHuman 
+    public class Assassin : IHuman
     {
         public Assassin() {
-            
         }
     }
 }
