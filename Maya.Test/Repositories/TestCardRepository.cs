@@ -12,17 +12,20 @@ namespace Maya.Test.Repositories
     public class TestCardRepository : ICardRepository
     {
         private List<ICard> cards;
-        public TestCardRepository() {
+        public TestCardRepository()
+        {
             cards = new List<ICard> {
                 new RunCard(),
                 new WalkCard(),
                 new AttackCard()
             };
-
         }
+
         public ICollection<ICard> Get()
         {
             return this.cards;
         }
+
+
     }
 }

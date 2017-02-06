@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Maya.Common.Board
+namespace Maya.Common.Enums
 {
-    public interface IBoard
+    public enum PlayerTypes
     {
-        
+        Player,
+        Enemy
     }
 }

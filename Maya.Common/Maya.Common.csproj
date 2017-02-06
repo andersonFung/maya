@@ -40,14 +40,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Actions\IPlayer.cs" />
+    <Compile Include="Classes\Player.cs" />
+    <Compile Include="Enums\ControlTypes.cs" />
+    <Compile Include="Enums\PlayerTypes.cs" />
+    <Compile Include="Actions\IActionable.cs" />
     <Compile Include="Board\IBoard.cs" />
+    <Compile Include="Factories\IBroadFactory.cs" />
     <Compile Include="Cards\IActionCard.cs" />
     <Compile Include="Cards\ICard.cs" />
     <Compile Include="Cards\IMovementCard.cs" />
-    <Compile Include="Classes\IAssassin.cs" />
     <Compile Include="Classes\IHuman.cs" />
+    <Compile Include="Enums\BoardTypes.cs" />
     <Compile Include="Factories\ICardFactory.cs" />
+    <Compile Include="Factories\IPlayerFactory.cs" />
+    <Compile Include="Actions\IAttack.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\ICardRepository.cs" />
   </ItemGroup>

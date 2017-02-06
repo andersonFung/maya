@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Maya.Common.Board
+namespace Maya.Common.Actions
 {
-    public interface IBoard
+    public interface IAttack
     {
-        
+
     }
 }

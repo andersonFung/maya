@@ -45,7 +45,9 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
+          <Private>False</Private>
+        </Reference>
       </ItemGroup>
     </Otherwise>
   </Choose>
@@ -53,11 +55,16 @@
     <Compile Include="CharacterClassTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\TestCardRepository.cs" />
+    <Compile Include="BoardTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Maya.Common\Maya.Common.csproj">
       <Project>{0e62531d-b652-43e6-bc9c-b90e9ae7265d}</Project>
       <Name>Maya.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Maya.Concrete\Maya.Concrete.csproj">
+      <Project>{42e27a4c-b8de-43ce-876a-ea2f5c1e18cb}</Project>
+      <Name>Maya.Concrete</Name>
     </ProjectReference>
     <ProjectReference Include="..\Maya.Core\Maya.Core.csproj">
       <Project>{0a5df4fc-6448-4b9e-8328-fb839c2ba2d1}</Project>

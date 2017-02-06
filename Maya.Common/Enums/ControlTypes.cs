@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Maya.Common.Classes
+namespace Maya.Common.Enums
 {
-    public interface IAssassin : IHuman
+    public enum ControlTypes
     {
-        
+        NPC, 
+        Player
     }
 }

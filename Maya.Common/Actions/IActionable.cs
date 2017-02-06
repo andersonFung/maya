@@ -4,14 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Maya.Common.Cards;
+using Maya.Common.Classes;
+
 namespace Maya.Common.Actions
 {
-    public interface IPlayer
+    public interface IActionable
     {
-        void attack(IPlayer target);
+        void attack(IAttack attack);
         void getCards(ICollection<ICard> cards);
-
-        void defend(IPlayer source);
+        void defend();
 
 
         

@@ -40,8 +40,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Attacks\CardAttack.cs" />
+    <Compile Include="BroadFactory.cs" />
     <Compile Include="CardFactory.cs" />
     <Compile Include="Classes\Assassin.cs" />
+    <Compile Include="GameBoard.cs" />
+    <Compile Include="PlayerFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
